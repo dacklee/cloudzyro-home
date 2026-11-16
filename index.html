@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大壳的个人站点</title>
+<meta name="description" content="大壳的个人站点：观鸟、创作与技术折腾的自留地。">
+<style>
+  :root{
+    --bg:#0f1420; --panel:#171e2e; --line:#26314a;
+    --text:#e8edf5; --muted:#93a1b8; --accent:#4da3ff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    background:var(--bg); color:var(--text); line-height:1.7;
+    min-height:100vh; display:flex; flex-direction:column;
+  }
+  .wrap{width:100%;max-width:760px;margin:0 auto;padding:56px 20px 40px;flex:1}
+  header{margin-bottom:40px}
+  .badge{
+    display:inline-block;font-size:13px;color:var(--accent);
+    border:1px solid var(--line);border-radius:999px;padding:2px 12px;margin-bottom:18px;
+    background:var(--panel);
+  }
+  h1{font-size:34px;font-weight:700;letter-spacing:.5px;margin-bottom:12px}
+  .intro{color:var(--muted);font-size:16px;max-width:34em}
+  .cards{display:grid;grid-template-columns:1fr;gap:14px;margin-top:8px}
+  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)}}
+  .card{
+    background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:20px 18px;
+  }
+  .card h2{font-size:17px;margin-bottom:8px;color:var(--text)}
+  .card p{font-size:14px;color:var(--muted)}
+  footer{
+    border-top:1px solid var(--line);color:var(--muted);font-size:13px;
+    padding:18px 20px;text-align:center;
+  }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <span class="badge">站点已上线</span>
+      <h1>大壳的个人站点</h1>
+      <p class="intro">这里是我的自留地，放观鸟记录、创作作品和平时折腾的技术笔记。页面先行一步，内容随后慢慢补上。</p>
+    </header>
+    <section class="cards">
+      <div class="card">
+        <h2>观鸟</h2>
+        <p>常年在广东一带看鸟，记录遇到的鸟种和拍摄心得，勺嘴鹬是心头好。</p>
+      </div>
+      <div class="card">
+        <h2>创作</h2>
+        <p>诗词配乐视频、短片先导片，还有一些随手写下的文字，都收在这里。</p>
+      </div>
+      <div class="card">
+        <h2>技术折腾</h2>
+        <p>服务器、域名和各种免费资源的使用记录，能跑起来的都记上一笔。</p>
+      </div>
+    </section>
+  </main>
+  <footer>大壳的个人站点 · 托管于 Cloudzyro 免费 Launch 套餐</footer>
+</body>
+</html>
